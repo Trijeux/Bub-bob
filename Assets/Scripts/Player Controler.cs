@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -9,10 +10,17 @@ public class PlayerControler : MonoBehaviour
     [SerializeField] private float speed = 2;
     [SerializeField] private float jump_force = 2;
     public IsGrounded _grounded;
-    public IsFall _fall;
     private Animator _animator;
+    public PlayerReRespawn _spawn;
+    public DeadSpike _dead;
+    public SetSpawnPoint _FlagePoint;
+    public FlagueWin _FlagueWin;
     private bool isfall = false;
     private int isfallstart = 0;
+    public string WinScene;
+    public string DeadScene;
+    [SerializeField] private int LifePlayer = 3;
+    public Text LifePlayerCount;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +28,7 @@ public class PlayerControler : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
+        _spawn.SpawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -39,17 +48,7 @@ public class PlayerControler : MonoBehaviour
                 _animator.SetBool("IsJump", false);
             }
         }
-
-        if (!_fall.isFall && Input.GetAxis("Jump") <= 0)
-        {
-            _animator.SetBool("IsFall", true);
-            isfall = true;
-            isfallstart++;
-            if (isfallstart == 1)
-            {
-                _rb.gravityScale /= 3f;
-            }
-        }
+        
         else
         {
             _animator.SetBool("IsFall", false);
@@ -59,6 +58,30 @@ public class PlayerControler : MonoBehaviour
                 isfall = false;
                 isfallstart = 0;
             }
+        }
+
+        if (_dead.Dead == true)
+        {
+            _spawn.ReSpawn();
+            LifePlayer -= 1;
+            LifePlayerCount.text = LifePlayer.ToString();
+            _dead.Dead = false;
+        }
+
+        if (_FlagePoint.flagepoint == true)
+        {
+            _spawn.SpawnPoint = transform.position;
+            _FlagePoint.flagepoint = false;
+        }
+
+        if (_FlagueWin.flagewin == true)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(WinScene);
+        }
+
+        if (LifePlayer <= 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(DeadScene);
         }
     }
 

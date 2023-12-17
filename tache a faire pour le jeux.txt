@@ -1,0 +1,8 @@
+dead : la position du joueur (transform.position) sauvgarder dans un variable et 
+quand rentre en contacte avec les picke meure et la position du joueur = a la variable
+
+finish : change de scene (UnityEngine.SceneManagement.SceneManager.LoadScene(_sceneToLoad);)
+pour mettre un game over ou un felicitation avec le nombre de pièce touver
+
+checkpoint : resauvgarde la nouvel position du joueur dans une variable (la même que la précédente)
+si le joueur meure il respawn au chackpiont et non au début
