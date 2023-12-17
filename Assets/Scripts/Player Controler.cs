@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +14,6 @@ public class PlayerControler : MonoBehaviour
     public SetSpawnPoint _FlagePoint;
     public FlagueWin _FlagueWin;
     private bool isfall = false;
-    private int isfallstart = 0;
     public string WinScene;
     public string DeadScene;
     [SerializeField] private int LifePlayer = 3;
@@ -56,7 +53,6 @@ public class PlayerControler : MonoBehaviour
             {
                 _rb.gravityScale *= 3f;
                 isfall = false;
-                isfallstart = 0;
             }
         }
 
