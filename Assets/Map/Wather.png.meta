@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa409238677f1034ea4567472ba9bc6d
+guid: 2bf2391222ad3034cacb0983be89a2b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5159362228428509745
-    second: Spike_0
+      213: 8374518593685115479
+    second: Wather_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spike_0
+      name: Wather_0
       rect:
         serializedVersion: 2
         x: 0
@@ -110,38 +110,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -2, y: 6}
-        - {x: -3, y: 4}
-        - {x: -4, y: 2}
-        - {x: -5, y: 0}
-        - {x: -6, y: -1}
-        - {x: -7, y: -4}
-        - {x: -8, y: -6}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -6}
-        - {x: 7, y: -4}
-        - {x: 6, y: -1}
-        - {x: 5, y: 0}
-        - {x: 4, y: 2}
-        - {x: 3, y: 4}
-        - {x: 2, y: 6}
-        - {x: 1, y: 8}
-        - {x: -1, y: 8}
-      physicsShape:
-      - - {x: 7, y: -3}
-        - {x: 3, y: 4}
-        - {x: 1, y: 8}
-        - {x: -1, y: 8}
-        - {x: -3, y: 4}
-        - {x: -7, y: -3}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: fcd63f283634668b0800000000000000
-      internalID: -5159362228428509745
+      spriteID: 75251857a44483470800000000000000
+      internalID: 8374518593685115479
       vertices: []
       indices: 
       edges: []
@@ -149,7 +123,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7f511f9b311d51b40b1c23c34d9249fc
+    spriteID: 6c835d47943486a4fa279cf6d288c7f3
     internalID: 0
     vertices: []
     indices: 
@@ -157,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spike_0: -5159362228428509745
+      Wather_0: 8374518593685115479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

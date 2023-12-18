@@ -10,7 +10,10 @@ public class PlayerControler : MonoBehaviour
     public IsGrounded _grounded;
     private Animator _animator;
     public PlayerReRespawn _spawn;
-    public DeadSpike _dead;
+    public DeadSpike _DeadSpike;
+    public DeadSpike _DeadTrou;
+    public DeadSpike _DeadWater;
+    public DeadSpike _DeadSpikemoving;
     public SetSpawnPoint _FlagePoint;
     public FlagueWin _FlagueWin;
     private bool isfall = false;
@@ -56,12 +59,15 @@ public class PlayerControler : MonoBehaviour
             }
         }
 
-        if (_dead.Dead == true)
+        if (_DeadSpike.Dead == true || _DeadTrou.Dead == true || _DeadSpikemoving.Dead == true || _DeadWater.Dead == true)
         {
             _spawn.ReSpawn();
             LifePlayer -= 1;
             LifePlayerCount.text = LifePlayer.ToString();
-            _dead.Dead = false;
+            _DeadSpike.Dead = false;
+            _DeadTrou.Dead = false;
+            _DeadSpikemoving.Dead = false;
+            _DeadWater.Dead = false;
         }
 
         if (_FlagePoint.flagepoint == true)
