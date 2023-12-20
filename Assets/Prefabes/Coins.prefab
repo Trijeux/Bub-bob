@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04ac950555c82f41bb0a46bddefea7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinManager: {fileID: 11400000, guid: 52fcdcaa8c530c641960bf417161df28, type: 2}
 --- !u!95 &6722190571751180320
 Animator:
   serializedVersion: 7

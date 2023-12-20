@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerControler : MonoBehaviour
@@ -17,10 +18,12 @@ public class PlayerControler : MonoBehaviour
     public SetSpawnPoint _FlagePoint;
     public FlagueWin _FlagueWin;
     private bool isfall = false;
+    public string Game;
     public string WinScene;
     public string DeadScene;
     [SerializeField] private int LifePlayer = 3;
     public Text LifePlayerCount;
+    public CoinManager _CoinManager;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,12 @@ public class PlayerControler : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _spawn.SpawnPoint = transform.position;
+        Scene currentScene = SceneManager.GetActiveScene ();
+        string sceneName = currentScene.name;
+        if (sceneName == "Game")
+        {
+            _CoinManager.resetCoins();
+        }
     }
 
     // Update is called once per frame

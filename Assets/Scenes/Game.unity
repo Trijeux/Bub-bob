@@ -4605,6 +4605,7 @@ MonoBehaviour:
   DeadScene: GameOver
   LifePlayer: 3
   LifePlayerCount: {fileID: 1884770366}
+  _CoinManager: {fileID: 11400000, guid: 52fcdcaa8c530c641960bf417161df28, type: 2}
 --- !u!114 &620902807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8147,7 +8148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsCount: 0
-  coinsCounrText: {fileID: 1599059173}
+  coinsCountText: {fileID: 1599059173}
+  _CoinManager: {fileID: 11400000, guid: 52fcdcaa8c530c641960bf417161df28, type: 2}
 --- !u!1001 &1631464506
 PrefabInstance:
   m_ObjectHideFlags: 0

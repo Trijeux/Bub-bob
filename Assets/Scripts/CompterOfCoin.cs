@@ -4,9 +4,10 @@ using UnityEngine.UI;
 public class CompterOfCoin : MonoBehaviour
 {
     public int coinsCount;
-    public Text coinsCounrText;
+    public Text coinsCountText;
     
     public static CompterOfCoin instance;
+    public CoinManager _CoinManager;
 
     private void Awake()
     {
@@ -18,9 +19,9 @@ public class CompterOfCoin : MonoBehaviour
         instance = this;
     }
 
-    public void AddCoins(int count)
+    public void StringCoins()
     {
-        coinsCount += count;
-        coinsCounrText.text = coinsCount.ToString();
+        coinsCount = _CoinManager.coins;
+        coinsCountText.text = coinsCount.ToString();
     }
 }

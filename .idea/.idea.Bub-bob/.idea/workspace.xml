@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208a4ada-305c-4cf0-a95d-c5397a3bcb8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CoinManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bub-bob/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bub-bob/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Spike.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Map/Spike.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabes/Coins.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabes/Coins.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeadSpike.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeadSpike.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CompterOfCoin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CompterOfCoin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUpCoin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUpCoin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Controler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Controler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +32,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2ZN1KLurJpsMuIM0zIGDmFLyxHf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +61,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Downloads\Bub bob.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Downloads/Bub bob.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Anthony Barman\Downloads" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -117,6 +123,7 @@
       <workItem from="1702817209867" duration="1176000" />
       <workItem from="1702903056456" duration="432000" />
       <workItem from="1702905019990" duration="1295000" />
+      <workItem from="1703060002390" duration="4360000" />
     </task>
     <servers />
   </component>
